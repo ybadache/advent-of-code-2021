@@ -1,3 +1,5 @@
+package com.ybadache.advent.day1.puzzle1;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -5,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Day1Test   {
+public class Day1Puzzle1Test  {
 
     @Test
     public void day1Puzzle1EdgeCasesTest()     {
@@ -22,7 +24,7 @@ public class Day1Test   {
     public void day1Puzzle1SingleSampleTest()   {
         final Day1Puzzle1 day1Puzzle1 = new Day1Puzzle1();
 
-final int singleInput = day1Puzzle1.resolve(Arrays.asList("42"));
+    final int singleInput = day1Puzzle1.resolve(Arrays.asList("42"));
         Assertions.assertEquals(0, singleInput);
 
         final int dualInputNoIncrease = day1Puzzle1.resolve(Arrays.asList("42", "24"));
@@ -33,7 +35,7 @@ final int singleInput = day1Puzzle1.resolve(Arrays.asList("42"));
     }
 
     @Test
-    public void day1Puzzle1ExampleInput()      {
+    public void day1Puzzle1ExampleInputTest()      {
         final Day1Puzzle1 day1Puzzle1 = new Day1Puzzle1();
 
         final List<String> input = Arrays.asList(
