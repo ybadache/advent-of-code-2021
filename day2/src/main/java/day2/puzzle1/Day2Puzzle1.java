@@ -1,4 +1,4 @@
-package com.ybadache.advent.day2.puzzle1;
+package day2.puzzle1;
 
 import java.util.List;
 import java.util.Objects;

@@ -1,8 +1,7 @@
-package com.ybadache.advent.day2;
+package day2;
 
-import com.ybadache.advent.day1.Day1Main;
-import com.ybadache.advent.day2.puzzle1.Day2Puzzle1;
-import com.ybadache.advent.day2.puzzle2.Day2Puzzle2;
+import day2.puzzle1.Day2Puzzle1;
+import day2.puzzle2.Day2Puzzle2;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -19,7 +18,7 @@ public class Day2Main {
         final Day2Puzzle2 day2Puzzle2 = new Day2Puzzle2();
         final List<String> inputDay2 = new ArrayList<>();
 
-        URL url = Day1Main.class.getClassLoader().getResource("input_day2.txt");
+        URL url = Day2Main.class.getClassLoader().getResource("input.txt");
 
         Stream<String> fileLines = Files.lines(Paths.get(url.toURI().getPath()));
         fileLines.forEach(line -> inputDay2.add(line));

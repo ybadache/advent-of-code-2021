@@ -1,4 +1,4 @@
-package com.ybadache.advent.day2.puzzle1;
+package day2.puzzle1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
