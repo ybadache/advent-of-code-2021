@@ -18,7 +18,7 @@ public class Day1Main {
         final Day1Puzzle1 day1Puzzle1 = new Day1Puzzle1();
         final List<String> inputDay1 = new ArrayList<>();
 
-        URL url = Day1Main.class.getClassLoader().getResource("input.txt");
+        URL url = Day1Main.class.getClassLoader().getResource("input_day1.txt");
 
         Stream<String> fileLines = Files.lines(Paths.get(url.toURI().getPath()));
         fileLines.forEach(line -> inputDay1.add(line));
