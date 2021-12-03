@@ -1,12 +1,13 @@
 package day2.puzzle2;
 
+import com.ybadache.advent.commons.utils.ObjectCheckingUtils;
+
 import java.util.List;
-import java.util.Objects;
 
 public class Day2Puzzle2 {
 
     public int resolve(List<String> input)      {
-        if (Objects.isNull(input) || input.size() == 0)     {
+        if (ObjectCheckingUtils.isListNullOrEmpty(input))     {
             return 0;
         }
 
