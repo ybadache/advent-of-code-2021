@@ -34,15 +34,14 @@ public class Day4Puzzle1Test {
                 "\n"
         );
 
-        List<String[][]> extractedBingoCards = day4Puzzle1.extractBingoCardsFromInput(input);
+        List<int[][]> extractedBingoCards = day4Puzzle1.extractBingoCardsFromInput(input);
         Assertions.assertNotNull(extractedBingoCards);
         Assertions.assertNotEquals(0, extractedBingoCards.size());
 
-        for (String[][] bingoCard : extractedBingoCards)    {
-            for (int i = 0; i < bingoCard.length - 1; i++)  {
-                for (int j = 0; j < bingoCard[i].length - 1; j++)   {
+        for (int[][] bingoCard : extractedBingoCards)    {
+            for (int i = 0; i < bingoCard.length; i++)  {
+                for (int j = 0; j < bingoCard[i].length; j++)   {
                     Assertions.assertNotNull(bingoCard[i][j]);
-                    Assertions.assertNotEquals("", bingoCard[i][j]);
                 }
             }
         }
@@ -58,8 +57,8 @@ public class Day4Puzzle1Test {
         Assertions.assertEquals(5, initializedBingoCardsTags.size());
 
         for (boolean[][] bingoCardTag : initializedBingoCardsTags)  {
-            for (int i = 0; i < bingoCardTag.length - 1; i++)  {
-                for (int j = 0; j < bingoCardTag[i].length - 1; j++)   {
+            for (int i = 0; i < bingoCardTag.length; i++)  {
+                for (int j = 0; j < bingoCardTag[i].length; j++)   {
                     Assertions.assertFalse(bingoCardTag[i][j]);
                 }
             }

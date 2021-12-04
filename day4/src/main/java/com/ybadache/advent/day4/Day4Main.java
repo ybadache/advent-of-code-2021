@@ -22,5 +22,8 @@ public class Day4Main {
 
         Stream<String> fileLines = Files.lines(Paths.get(url.toURI().getPath()));
         fileLines.forEach(line -> inputDay4.add(line));
+
+        final int firstAnswer = day4Puzzle1.resolve(inputDay4);
+        System.out.println("Answer day 4 puzzle 1 : " + firstAnswer);
     }
 }
