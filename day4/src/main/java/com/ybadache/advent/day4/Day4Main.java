@@ -25,5 +25,8 @@ public class Day4Main {
 
         final int firstAnswer = day4Puzzle1.resolve(inputDay4);
         System.out.println("Answer day 4 puzzle 1 : " + firstAnswer);
+
+        final int secondAnswer = day4Puzzle2.resolve(inputDay4);
+        System.out.println("Answer day 4 puzzle 2 : " + secondAnswer);
     }
 }
