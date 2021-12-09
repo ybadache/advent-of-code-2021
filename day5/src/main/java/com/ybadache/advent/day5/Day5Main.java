@@ -1,6 +1,7 @@
 package com.ybadache.advent.day5;
 
 import com.ybadache.advent.day5.puzzle1.Day5Puzzle1;
+import com.ybadache.advent.day5.puzzle2.Day5Puzzle2;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
