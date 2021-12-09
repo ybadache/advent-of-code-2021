@@ -2,12 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>advent-of-code</artifactId>
+        <groupId>com.ybadache</groupId>
+        <version>2021</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ybadache</groupId>
-    <artifactId>advent-of-code</artifactId>
-    <version>2021</version>
-    <packaging>pom</packaging>
+    <artifactId>day5</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -15,22 +17,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <modules>
-        <module>commons</module>
-        <module>day1</module>
-        <module>day2</module>
-        <module>day3</module>
-        <module>day4</module>
-        <module>day5</module>
-    </modules>
-
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
+            <groupId>com.ybadache</groupId>
+            <artifactId>commons</artifactId>
+            <version>2021</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
