@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Day6Puzzle1 {
 
-    private static final int DAYS_TO_COUNT = 80;
+    private static final int DAYS_TO_COUNT = 256;
 
     public int resolve(List<String> input)  {
     List<Fish> schoolOfFishes = new ArrayList<>();

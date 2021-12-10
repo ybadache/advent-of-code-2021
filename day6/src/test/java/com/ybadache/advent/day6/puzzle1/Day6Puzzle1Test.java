@@ -15,5 +15,8 @@ public class Day6Puzzle1Test {
 
         final int expectedAnswer = new Day6Puzzle1().resolve(input);
         Assertions.assertEquals(5934, expectedAnswer);
+
+        final int expectedFasterAnswer = new Day6Puzzle1Faster().resolve(input);
+        Assertions.assertEquals(5934, expectedFasterAnswer);
     }
 }
