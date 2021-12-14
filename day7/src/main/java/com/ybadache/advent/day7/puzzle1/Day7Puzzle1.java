@@ -9,11 +9,11 @@ public class Day7Puzzle1 {
             positions[i] = Integer.parseInt(positionsString[i]);
         }
 
-        int result = 9999;
+        int result = Integer.MAX_VALUE;
         for (int i = 0; i < positions.length; i++)      {
             int totalFuelNeeded = 0;
             for (int j = 0; j < positions.length; j++)  {
-                totalFuelNeeded += Math.abs(positions[i] - positions[j]);
+                totalFuelNeeded += Math.abs(i - positions[j]);
             }
 
             result = Math.min(result, totalFuelNeeded);
